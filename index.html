@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="SceneAdapter: Dive Your Voice Into Multiple Real Life Scene With A New Multi Scene Dataset">
+        content="MSceneSpeech: A Multi-Scene Speech Dataset For Expressive Speech Synthesis">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SceneAdapter</title>
@@ -41,7 +41,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">SceneAdapter: Dive Your Voice Into Multiple Real Life Scene With A New Multi Scene Dataset</h1>
+          <h1 class="title is-1 publication-title">MSceneSpeech: A Multi-Scene Speech Dataset For Expressive Speech Synthesis</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">Qian Yang<sup>1,*</sup>,</span>
             <span class="author-block">Jialong Zuo<sup>1,*</sup>,</span>
@@ -96,21 +96,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Current adaptive text-to-speech (TTS) can synthesize high quality voice for any user. However, transferring this tailored
-            voice to different real-life scenarios with various prosody is still a great challenge. To address this, we propose SceneAdapter,
-            an adaptive TTS framework that leverages reference prosody speech and prompting mechanism to model
-            scene-specific prosody and generate multiple prosody diverse
-            speech. Along with the model, we have curated a multiscene
-            dataset (MSVoice) featuring prosody-rich recordings
-            in multiple real-life scenarios. We first pre-train our model
-            in a 400 hours large mixed bilingual dataset with Chinese
-            and English, employing a masked prediction mechanism
-            to model basic timbre and prosody representations. After
-            that, we fine-tune our model on the proposed multi-scene
-            dataset to transfer scene-relevant prosody. Experimental results
-            indicate our model can effectively synthesize speech
-            characterized by both user-specific timbre and scene-specific
-            prosody with arbitrary text input. Audio samples can be found in this demo page.
+           We introduce an open source high-quality Mandarin TTS dataset MSceneSpeech (Multiple Scene Speech Dataset), which is intended to provide resources for expressive speech synthesis. MSceneSpeech comprises numerous audio recordings and texts performed and recorded according to daily life scenarios. Each scenario includes multiple speakers and a diverse range of prosodic styles, making it suitable for speech synthesis that entails multi-speaker style and prosody modeling.
+    We have established a robust baseline, through the prompting mechanism, that can effectively synthesize speech characterized by both user-specific timbre and scene-specific prosody with arbitrary text input. The open source MSceneSpeech Dataset and audio samples of our baseline are available at https://speechai-demo.github.io/MSceneSpeech/.
           </p>
         </div>
 
