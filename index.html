@@ -255,35 +255,35 @@
                 <div class="content has-text-justified">
                   <p>
                     
-                    The dataset is provided as a single set, without any predefined train-test split.<br />
+                    The dataset is provided as predefined train-test split.<br />
 
                     The organization of the directory structure is hierarchical, based on the scene, then the speaker. Within the speaker folder, we provides the audio with its corresponding text and pronunciation (pinyin). The following ASCII diagram depicts this structure:
                     <code markdown class="has-text-left">
     <corpus root>
     │
-    ├── readme.txt
+    ├── Train
+    │    │
+    │    └── qa/
+    │        │
+    │        └── 客服问答一_犀牛有角/                
+    │            │
+    │            ├── 0.wav
+    │            │
+    │            └── 0.txt
+    │            |
+    │            └── 0_pinyin.txt
+    │            ...
+    │                  </code>
+    │                  <script src="https://cdn.jsdelivr.net/npm/marked@3.0.0/marked.min.js"></script>
+    │                  <script>
+    │                  var m=document.querySelectorAll('code[markdown]');
+    │                  for(var i=0;i<m.length;i++){
+    │                  m[i].outerHTML='<div>'+marked(m[i].innerHTML)+'</div>';
+    │                  }
+    │                  </script>
     │
-    └── data/
-        │
-        └── qa/
-            │
-            └── 客服问答一_犀牛有角/                
-                │
-                ├── 0.wav
-                │
-                └── 0.txt
-                |
-                └── 0_pinyin.txt
-                ...
-                      </code>
-                      <script src="https://cdn.jsdelivr.net/npm/marked@3.0.0/marked.min.js"></script>
-                      <script>
-                      var m=document.querySelectorAll('code[markdown]');
-                      for(var i=0;i<m.length;i++){
-                      m[i].outerHTML='<div>'+marked(m[i].innerHTML)+'</div>';
-                      }
-                      </script>
-                      
+    │── Test
+            ...
 
                   </p>
                 </div>
