@@ -203,17 +203,12 @@
                 </p>
               </div>
 
+            <!-- <img src="./static/images/0bceae62cd952772251cbbcb4c5a017.png"
+            class="interpolation-image"
+            alt="Interpolate start reference image."/><br /> -->
             <img src="./static/images/audio_attribute_comparison.png"
             class="interpolation-image"
             alt="Interpolate start reference image."/>
-      
-            <img src="./static/images/pitch_comparison.png"
-            class="interpolation-image"
-            alt="Interpolate start reference image."/><br /> 
-             <h2 class="has-text-centered is-8">
-                Comparison of Mean of pitch, Variance of pitch, and Skew of pitch across three datasets: DidiSpeech(DS), 
-                Aishell3(AS3), and our MSceneSpeech(MS). The statistics represent averaged metrics from individual speakers 
-                within each dataset. Each subplot focuses on a different statistical metric.          </h2>
             <div class="has-text-left">
               <p>
                 <h4>Dataset demo:</h4>
@@ -260,46 +255,35 @@
                 <div class="content has-text-justified">
                   <p>
                     
-                    The dataset is provided as predefined train-test split.<br />
+                    The dataset is provided as a single set, without any predefined train-test split.<br />
 
                     The organization of the directory structure is hierarchical, based on the scene, then the speaker. Within the speaker folder, we provides the audio with its corresponding text and pronunciation (pinyin). The following ASCII diagram depicts this structure:
                     <code markdown class="has-text-left">
-    <body>
-    <div>
-        <p>Corpus Root</p>
-        <ul>
-            <li>Train
-                <ul>
-                    <li>qa/
-                        <ul>
-                            <li>客服问答一_犀牛有角/
-                                <ul>
-                                    <li>0.wav</li>
-                                    <li>0.txt</li>
-                                    <li>0_pinyin.txt</li>
-                                    <!-- 更多文件或文件夹 -->
-                                </ul>
-                            </li>
-                            <!-- 更多问答对或内容 -->
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>Test
-                <!-- 测试集的具体内容 -->
+    <corpus root>
+    │
+    ├── readme.txt
+    │
+    └── data/
+        │
+        └── qa/
+            │
+            └── 客服问答一_犀牛有角/                
+                │
+                ├── 0.wav
+                │
+                └── 0.txt
+                |
+                └── 0_pinyin.txt
                 ...
-            </li>
-        </ul>
-    </div>
-
-    <!-- 转换Markdown到HTML的脚本 -->
-    <script>
-        var m = document.querySelectorAll('code[markdown]');
-        for (var i = 0; i < m.length; i++) {
-            m[i].outerHTML = '<div>' + marked(m[i].innerHTML) + '</div>';
-        }
-    </script>
-</body>
+                      </code>
+                      <script src="https://cdn.jsdelivr.net/npm/marked@3.0.0/marked.min.js"></script>
+                      <script>
+                      var m=document.querySelectorAll('code[markdown]');
+                      for(var i=0;i<m.length;i++){
+                      m[i].outerHTML='<div>'+marked(m[i].innerHTML)+'</div>';
+                      }
+                      </script>
+                      
 
                   </p>
                 </div>
