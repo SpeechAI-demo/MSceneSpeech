@@ -259,31 +259,42 @@
 
                     The organization of the directory structure is hierarchical, based on the scene, then the speaker. Within the speaker folder, we provides the audio with its corresponding text and pronunciation (pinyin). The following ASCII diagram depicts this structure:
                     <code markdown class="has-text-left">
-    <corpus root>
-    │
-    ├── Train
-    │    │
-    │    └── qa/
-    │        │
-    │        └── 客服问答一_犀牛有角/                
-    │            │
-    │            ├── 0.wav
-    │            │
-    │            └── 0.txt
-    │            |
-    │            └── 0_pinyin.txt
-    │            ...
-    │                  </code>
-    │                  <script src="https://cdn.jsdelivr.net/npm/marked@3.0.0/marked.min.js"></script>
-    │                  <script>
-    │                  var m=document.querySelectorAll('code[markdown]');
-    │                  for(var i=0;i<m.length;i++){
-    │                  m[i].outerHTML='<div>'+marked(m[i].innerHTML)+'</div>';
-    │                  }
-    │                  </script>
-    │
-    │── Test
-            ...
+    <body>
+    <div>
+        <p>Corpus Root</p>
+        <ul>
+            <li>Train
+                <ul>
+                    <li>qa/
+                        <ul>
+                            <li>客服问答一_犀牛有角/
+                                <ul>
+                                    <li>0.wav</li>
+                                    <li>0.txt</li>
+                                    <li>0_pinyin.txt</li>
+                                    <!-- 更多文件或文件夹 -->
+                                </ul>
+                            </li>
+                            <!-- 更多问答对或内容 -->
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Test
+                <!-- 测试集的具体内容 -->
+                ...
+            </li>
+        </ul>
+    </div>
+
+    <!-- 转换Markdown到HTML的脚本 -->
+    <script>
+        var m = document.querySelectorAll('code[markdown]');
+        for (var i = 0; i < m.length; i++) {
+            m[i].outerHTML = '<div>' + marked(m[i].innerHTML) + '</div>';
+        }
+    </script>
+</body>
 
                   </p>
                 </div>
