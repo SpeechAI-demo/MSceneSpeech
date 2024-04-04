@@ -195,11 +195,12 @@
 
                   </div>
                   <br>
-                  <div class="content has-text-justified">
-                    <p>
-                      Here is the audio attributes of different scenes. The scene is highly variant on Speed, Pitch and Energy, which can all serve as a great indicator of a highly variant prosody
-                    </p>
-                  </div>
+                  
+                </p>
+              </div>
+              <div class="content has-text-justified">
+                <p>
+                  Here is the audio attributes of different scenes. The scene is highly variant on Speed, Pitch and Energy, which can all serve as a great indicator of a highly variant prosody
                 </p>
               </div>
 
@@ -209,6 +210,22 @@
             <img src="./static/images/audio_attribute_comparison.png"
             class="interpolation-image"
             alt="Interpolate start reference image."/>
+
+            <div class="content has-text-justified">
+              <p>
+                Here is the a comparison of Mean of pitch, Variance of pitch,
+                and Skew of pitch across three datasets: DidiSpeech (DS),
+                Aishell3 (AS3), and our MSceneSpeech (MS). The statistics rep-
+                resent averaged metrics from individual speakers within each
+                dataset. As can be observed from the figure, MSceneSpeech has a higher pitch variance and skewness compared to the other two datasets, indicating a more diverse pitch distribution.
+              </p>
+            </div>
+
+            <img src="./static/images/pit_comparison.png"
+            class="interpolation-image"
+            alt="Interpolate start reference image."/>
+
+            
             <div class="has-text-left">
               <p>
                 <h4>Dataset demo:</h4>
@@ -260,6 +277,8 @@
                     The organization of the directory structure is hierarchical, based on the scene, then the speaker. Within the speaker folder, we provides the audio with its corresponding text and pronunciation (pinyin). The following ASCII diagram depicts this structure:
                     <code markdown class="has-text-left">
     <corpus root>
+    │
+    ├── readme.txt
     │
     └── train/
         │
